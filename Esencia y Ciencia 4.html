@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esencia & Ciencia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f5f1;
+      color: #1b3d1b;
+    }
+
+    header {
+      background-image: url('portada.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px 40px;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header h2 {
+      font-size: 1.5em;
+      font-weight: normal;
+      color: #e0ffe0;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    nav {
+      background-color: #2f4f2f;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1em;
+      margin: 5px 15px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #3f6f3f;
+      border-radius: 5px;
+    }
+
+    section {
+      display: none;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      border-left: 5px solid #2f4f2f;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      color: #2f4f2f;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: #2f4f2f;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    form button:hover {
+      background-color: #3f6f3f;
+    }
+
+    footer {
+      background-color: #2f4f2f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2em; }
+      header h2 { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Esencia & Ciencia</h1>
+    <h2>Descubre el Poder Curativo de las Plantas Medicinales</h2>
+  </header>
+
+  <nav>
+    <button onclick="mostrar('quienes')">¿Quiénes Somos?</button>
+    <button onclick="mostrar('productos')">Nuestros Productos</button>
+    <button onclick="mostrar('cursos')">Nuestros Cursos</button>
+    <button onclick="mostrar('servicios')">Nuestros Servicios</button>
+    <button onclick="mostrar('tienda')">Tienda Online</button>
+    <button onclick="mostrar('formulario')">Agenda y Contacto</button>
+  </nav>
+
+  <section id="quienes" class="active">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+      Somos una empresa comprometida con la salud y el bienestar natural, impartiendo conocimientos y experiencias en el uso de plantas medicinales. Ofrecemos diversas formas de aplicación: tratamientos, elaboración de tinturas, destilación de aceites esenciales y cosmética natural como jabones artesanales.
+    </p>
+    <p>
+      Compartimos técnicas de cultivo, siembra, reproducción, y creación de huertos urbanos. También transmitimos vivencias y saberes ancestrales que conectan con la naturaleza para lograr una sanación integral, especialmente en lo emocional.
+    </p>
+    <h3>Misión</h3>
+    <p>
+      Brindar conocimientos prácticos y naturales para mejorar la salud, armonizar cuerpo y espíritu, y reconectar con la tierra a través de la ciencia y la herbolaria.
+    </p>
+    <h3>Visión</h3>
+    <p>
+      Ser un referente en educación y comercialización de productos naturales, promoviendo un estilo de vida saludable y consciente basado en la tradición y el conocimiento científico.
+    </p>
+  </section>
+
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <p>
+      Ofrecemos aceites esenciales, tinturas, cremas, jabones, pomadas y más. Elaborados artesanalmente con plantas cultivadas de forma sostenible. Productos que equilibran ciencia y tradición para cuidar tu cuerpo y mente de forma natural.
+    </p>
+  </section>
+
+  <section id="cursos">
+    <h2>Nuestros Cursos</h2>
+    <p>
+      Aprende sobre herbolaria, extracción de aceites esenciales, cosmética natural y huertos urbanos. Cursos online y presenciales con enfoque práctico y vivencial, diseñados para todos los niveles. ¡Empodérate con el conocimiento natural!
+    </p>
+  </section>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <p>
+      Brindamos asesorías personalizadas, talleres, instalación de hu
